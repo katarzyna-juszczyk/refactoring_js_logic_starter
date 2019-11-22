@@ -17,6 +17,10 @@ class Shop {
         item.sellIn -= 1;
     }
 
+    sulfurasUpdate(item) {
+
+    }
+
     updateQuality() {
         this.items.forEach(item => {
 
@@ -25,6 +29,9 @@ class Shop {
             }
             if(item.name === "Aged Brie") {
                 return this.brieUpdate(item);
+            }
+            if(item.name === "Sulfuras, Hand of Ragnaros") {
+                return this.sulfurasUpdate(item);
             }
 
             if (item.name != 'Aged Brie' && item.name != 'Backstage passes to a TAFKAL80ETC concert') {
