@@ -172,7 +172,7 @@ Based on the requirement.txt I know that Backstage pass update should:
 * drop quality to 0 when after sellIn date
 * quality increase by 1 over time
 * if less than or equal 10 days quality increase by 2
-* if less than 5 days quality increase by 3
+* if less than or equal 5 days quality increase by 3
 
 
 Implement backstagePassUpdate(item) and inject it similarly to previous seams.
