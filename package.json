@@ -1,1 +1,11 @@
-{}
+{
+  "scripts": {
+    "test": "node src/gilded_rose_test.js | faucet"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tap-nyan": "1.1.0",
+    "tap-spec": "5.0.0",
+    "tape": "4.11.0"
+  }
+}

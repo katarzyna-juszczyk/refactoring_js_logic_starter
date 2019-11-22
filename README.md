@@ -417,3 +417,4 @@ how it calculates its output. There's no implicit state. All code is explicit.
 * sometimes you need to take a step backwards to move two steps forward
 * Misplaced behavior: Rapid growth in complexity is a sign that the code keeps accumulating responsibilities. Often, those responsibilities would be better off when expressed as separate units, so use refactorings like Extract Class/Function
 * Excess conditional logic: Quite often new features or bug fixes are squeezed into an existing design with the use of if/else chains. Most nested conditionals indicate a missing abstraction, and refactoring the code to use polymorphism erases special cases from the code.
+
