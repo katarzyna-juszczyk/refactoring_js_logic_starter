@@ -1,13 +1,12 @@
-const Item = require("./item");
+function update(originalItem) {
+    const item = {...originalItem};
 
-// make change easy and then make the easy change
-class Conjured extends Item {
-    update() {
-        this.quality = this.quality - 2;
-        if (this.sellIn <= 0) this.quality = this.quality - 2;
-        if(this.quality < 0) this.quality = 0;
-        this.sellIn = this.sellIn - 1;
-    }
+    item.sellIn = item.sellIn - 1;
+    item.quality = item.quality - 2;
+    if (item.sellIn < 0) item.quality = item.quality - 2;
+    if(item.quality < 0) item.quality = 0;
+
+    return item;
 }
 
-module.exports = Conjured;
+module.exports = update;
